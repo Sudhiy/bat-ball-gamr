@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>criket game</title>
+  <style>
+   body {
+       text-align: center;
+    }
+  </style>
+</head>
+<body>
+    
+  <h1> bat ball stump game <h1></h1>
+  
+
+  <button  onclick="
+
+  console.log('you have chosen bat');
+  randomNumber = Math.random()*3;
+ let computerChoice ;
+   let bat;
+   let result;
+  if(randomNumber > 0 && randomNumber <=1){
+     computerChoice ='bat';
+    
+
+  }
+  else if(randomNumber >1 && randomNumber <=2){
+     computerChoice = 'ball';
+  
+  }
+else{
+  computerChoice = 'stump';
+  
+
+
+}
+if(computerChoice === 'ball'){
+  result=('you win')
+}
+else if(computerChoice === 'bat'){
+  result=(`it's tie`);
+} 
+else if (computerChoice=== 'stump'){
+  result=('computer has win');
+}
+
+alert(`you have chosen bat.computerChoice is ${computerChoice} and ${result}`);
+ ">bat</button>
+
+
+  <button  onclick="
+
+  console.log('you have chosen ball');
+   randomNumber = Math.random()*3;
+
+  if(randomNumber > 0 && randomNumber <=1){
+     computerChoice ='bat';
+   
+
+  }
+  else if(randomNumber >1 && randomNumber <=2){
+     computerChoice = 'ball';
+ 
+  }
+else{
+  computerChoice = 'stump';
+  
+
+
+}
+if(computerChoice === 'ball'){
+  result=(`it's tie`);
+}
+else if(computerChoice === 'bat'){
+  result=(`you won`);
+} 
+else if (computerChoice=== 'stump'){
+  result=('you won');
+}
+
+alert(`you have chosen ball.computerChoice is ${computerChoice} and ${result}`);
+ ">ball</button>
+
+
+  <button  onclick="
+
+  console.log('you have chosen stump');
+  let randomNumber = Math.random()*3;
+    
+  if(randomNumber > 0 && randomNumber <=1){
+     computerChoice ='bat';
+     
+
+  }
+  else if(randomNumber >1 && randomNumber <=2){
+     computerChoice = 'ball';
+    
+  }
+else{
+  computerChoice = 'stump';
+ 
+
+
+}
+if(computerChoice === 'ball'){
+  result=('you win');
+
+}
+else if(computerChoice === 'bat'){
+  result=(`it's tie`);
+} 
+else if (computerChoice=== 'stump'){
+  result=(` it's tie`);
+}
+
+alert(`you have chosen stump.  computerChoice is     ${computerChoice} and    ${result}`);
+ ">stump</button>
+
+</body>
+</html>
